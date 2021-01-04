@@ -1,0 +1,202 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    color: #384047;
+    margin: 0 auto;
+}
+
+h2 {
+font-size: 1em;
+font-weight: bold;
+}
+
+p {
+font-size: 15px;
+color: #797979
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    max-width: 900px;
+  }
+
+fieldset {
+    border-style: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: flex;
+    margin-bottom: 8px;
+    width: 30%;
+    font-size: 15px;
+  }
+
+input[type="text"],
+textarea,
+select {
+  border: none;
+  font-size: 12px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"]:checked+label,
+input[type="radio"]:checked+label {
+    font-weight: bold;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 20px;
+  color: #FFF;
+  background-color: #30959c;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #30959c;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;  
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Intro ---- */
+
+.main-header {
+    /* display: flex; */
+    /* flex-direction: column; */
+    border-bottom: solid 4px #333;
+    /* margin-left: 0;
+    margin-right: 0; */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: white;
+    background-color: rgb(33, 41, 56);
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.headline-caption {
+    padding-bottom: 10px;
+}
+
+/* ---- Form ---- */
+
+.contact {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.user-name {
+    display: flex;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: auto;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+#zip-code {
+    width: 30%;
+}
+
+.copy {
+    font-size: 10px;
+}
+
+/* ---- Newsletter ---- */
+
+.select-newsletter,
+.other-topics {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    display: inline;
+}
+
+/* ---- Sign Up ---- */
+
+
+
+/* ================================= 
+  Media Query
+==================================== */
+@media (min-width: 768px) {
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+.contact, 
+.input-item {
+    flex-direction: row;
+  }
+  .contact input {
+    flex-grow: 1;
+    flex-basis: 75%;
+  }
+  .contact label {
+    flex-basis: 25%;
+    height: 50px;
+    margin: auto 0;
+  }
+
+
+}
