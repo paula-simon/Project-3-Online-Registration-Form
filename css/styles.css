@@ -51,6 +51,8 @@ legend {
 
 
 input[type="text"],
+input[type="email"],
+input[type="tel"],
 textarea,
 select {
   border: none;
@@ -64,6 +66,13 @@ select {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
   margin-top: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  background: #e7d49e;
 }
 
 input[type="checkbox"]:checked+label,
@@ -239,5 +248,10 @@ input[name="zip-code"]{
   input[name="zip-code"]{
     max-width: 40%;
   }
+
+  .input-item label,
+select {
+  margin: auto 0;
+}
 
 }
